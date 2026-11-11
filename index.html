@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فارس | Full-Stack Developer</title>
+    <!-- استدعاء الأيقونات فقط (اختياري، وإن أردت كودًا مستقلاً تماماً تعمل بدونها أو تستبدل الرموز) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="glow-bg-1"></div>
+    <div class="glow-bg-2"></div>
+
+    <!-- شريط التنقل العلوي -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-code"></i> فارس<span>.dev</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#about">عني</a>
+                <a href="#projects">المشاريع</a>
+                <a href="#skills">المهارات</a>
+                <a href="#contact">تواصل معي</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="تبديل الوضع">
+                    <i id="themeIcon" class="fa-solid fa-sun" style="color: #facc15;"></i>
+                </button>
+                <button id="mobileMenuBtn" class="icon-btn mobile-btn" aria-label="القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- القائمة للموبايل -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#about" class="mob-link">عني</a>
+            <a href="#projects" class="mob-link">المشاريع</a>
+            <a href="#skills" class="mob-link">المهارات</a>
+            <a href="#contact" class="mob-link">تواصل معي</a>
+        </div>
+    </nav>
+
+    <!-- الصفحة الرئيسية (Hero) -->
+    <header class="container hero">
+        <div class="badge">
+            <span class="pulse-dot"></span>
+            جاهز للعمل الحر والمشاريع التقنية
+        </div>
+        <h1 class="hero-title">
+            أهلاً، أنا <span class="text-gradient">فارس</span>
+        </h1>
+        <p class="hero-subtitle">
+            Full-Stack Developer | متخصص في بناء تطبيقات الويب
+        </p>
+        <p class="hero-desc">
+            "أحول الأفكار المعقدة إلى برمجيات نظيفة، سريعة، وذات تجربة مستخدم استثنائية."
+        </p>
+        <div class="hero-cta">
+            <a href="#contact" class="btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> تواصل معي
+            </a>
+            <a href="#projects" class="btn-outline">
+                <i class="fa-solid fa-code"></i> استعراض الأعمال
+            </a>
+        </div>
+    </header>
+
+    <!-- قسم عني -->
+    <section id="about" class="container">
+        <div class="grid-2">
+            <div>
+                <h2 class="section-title">
+                    <i class="fa-solid fa-user"></i> قصة شغفي التقني
+                </h2>
+                <p class="section-desc" style="margin-bottom: 1.5rem;">
+                    بدأت رحلتي في عالم البرمجة من شغف عميق بفهم كيفية عمل الأنظمة الرقمية وتطوير حلول تحل مشاكل حقيقية للمستخدمين. أمتلك خبرة عملية في تطوير تطبيقات الويب من الصفر وحتى النشر.
+                </p>
+                <p class="section-desc">
+                    أؤمن تماماً بأن الكود النظيف والتصميم المرن هما أساس أي مشروع ناجح. أستمتع دائماً بحل الألغاز البرمجية المعقدة.
+                </p>
+            </div>
+            <div class="glass-card">
+                <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1.25rem; color: var(--primary);">لماذا تتعاون معي؟</h3>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check"></i> كود قياسي منظم وقابل للتطوير (Clean Code)</li>
+                    <li><i class="fa-solid fa-check"></i> اهتمام فائق بأداء الموقع وسرعة التحميل</li>
+                    <li><i class="fa-solid fa-check"></i> تصميم متجاوب يعمل بسلاسة على كافة الشاشات</li>
+                    <li><i class="fa-solid fa-check"></i> الالتزام بالمواعيد ووضوح التواصل المستمر</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الأعمال -->
+    <section id="projects" class="container">
+        <h2 class="section-title">
+            <i class="fa-solid fa-briefcase"></i> معرض الأعمال
+        </h2>
+        <p class="section-desc">نماذج من المشاريع الحقيقية التي قمت بتطويرها بكفاءة عالية:</p>
+        
+        <div class="grid-3">
+            <!-- مشروع 1 -->
+            <div class="glass-card project-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="project-icon-box">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">منصة تجارة إلكترونية</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        تطوير متجر إلكتروني سريع مع نظام دفع آلي، لوحة تحكم للإدارة، وإدارة المنتجات لحظياً.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="primary-link"><i class="fa-solid fa-external-link-alt"></i> معاينة</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> الكود</a>
+                </div>
+            </div>
+
+            <!-- مشروع 2 -->
+            <div class="glass-card project-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="project-icon-box">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">تطبيق إدارة المهام</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        نظام لإدارة الفرق والمشاريع مع تحديثات فورية للمهام باستخدام التقنيات الحديثة.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="primary-link"><i class="fa-solid fa-external-link-alt"></i> معاينة</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> الكود</a>
+                </div>
+            </div>
+
+            <!-- مشروع 3 -->
+            <div class="glass-card project-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="project-icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">لوحة تحكم تحليلية</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        لوحة بيانات تعرض إحصائيات المبيعات والأداء بصرياً ورسوم بيانية متطورة.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">React</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <a href="#" class="primary-link"><i class="fa-solid fa-external-link-alt"></i> معاينة</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> الكود</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المهارات -->
+    <section id="skills" class="container">
+        <h2 class="section-title" style="margin-bottom: 3rem;">
+            <i class="fa-solid fa-layer-group"></i> المهارات التقنية
+        </h2>
+
+        <div class="grid-3">
+            <div class="glass-card">
+                <h3 style="font-weight: bold; margin-bottom: 1.25rem; color: var(--primary);">لغات البرمجة</h3>
+                <div class="tag-container" style="margin: 0;">
+                    <span class="tag">JavaScript (ES6+)</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">HTML5 / CSS3</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3 style="font-weight: bold; margin-bottom: 1.25rem; color: var(--primary);">الأطر والمكتبات</h3>
+                <div class="tag-container" style="margin: 0;">
+                    <span class="tag">React.js</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3 style="font-weight: bold; margin-bottom: 1.25rem; color: var(--primary);">أدوات التطوير</h3>
+                <div class="tag-container" style="margin: 0;">
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="container">
+        <div class="grid-2">
+            <div>
+                <h2 class="section-title">
+                    <i class="fa-solid fa-envelope"></i> دعنا نتواصل
+                </h2>
+                <p class="section-desc" style="margin-bottom: 2rem;">
+                    هل لديك مشروع جديد في الحسبان، استفسار تقني، أو ترغب في توظيفي؟ أرسل رسالة وسأقوم بالرد عليك في أقرب وقت ممكن.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <form id="contactForm" class="glass-card">
+                <div id="successMessage" class="success-msg">
+                    ✓ تم إرسال رسالتك بنجاح! سيتم التواصل معك قريباً.
+                </div>
+                <div class="form-group">
+                    <label>اسمك الكريم</label>
+                    <input type="text" required class="form-control" placeholder="مثال: أحمد محمد">
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" required class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>الرسالة</label>
+                    <textarea rows="4" required class="form-control" placeholder="اكتب تفاصيل مشروعك أو رسالتك هنا..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                    إرسال الرسالة
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <p>© <span id="currentYear"></span> فارس. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <style>
+         /* ==========================================
+           التنسيقات المدمجة (CSS) داخل نفس الملف
+           ========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Cairo', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --bg-main: #f9fafb;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --card-bg: rgba(255, 255, 255, 0.7);
+            --card-border: #e5e7eb;
+            --nav-bg: rgba(255, 255, 255, 0.8);
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --badge-bg: #eff6ff;
+            --badge-border: #bfdbfe;
+            --badge-text: #1d4ed8;
+            --input-bg: rgba(255, 255, 255, 0.8);
+            --tag-bg: #eff6ff;
+            --tag-text: #2563eb;
+            --icon-bg: #e5e7eb;
+        }
+
+        html.dark {
+            --bg-main: #030712;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --card-border: #1f2937;
+            --nav-bg: rgba(3, 7, 18, 0.8);
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --badge-bg: rgba(30, 58, 138, 0.4);
+            --badge-border: rgba(30, 64, 175, 0.5);
+            --badge-text: #93c5fd;
+            --input-bg: rgba(31, 41, 55, 0.6);
+            --tag-bg: #1f2937;
+            --tag-text: #93c5fd;
+            --icon-bg: #1f2937;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .glow-bg-1, .glow-bg-2 {
+            position: fixed;
+            width: 384px;
+            height: 384px;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: -10;
+            opacity: 0.15;
+        }
+        .glow-bg-1 { top: 0; right: 25%; background: var(--primary); }
+        .glow-bg-2 { bottom: 33%; left: 25%; background: #6366f1; }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(12px);
+            background-color: var(--nav-bg);
+            border-bottom: 1px solid var(--card-border);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .logo span { color: var(--text-main); }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .icon-btn {
+            padding: 0.6rem 0.8rem;
+            border-radius: 0.75rem;
+            background: var(--icon-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .icon-btn:hover { transform: scale(1.05); }
+        .mobile-btn { display: none; }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: var(--bg-main);
+            border-bottom: 1px solid var(--card-border);
+        }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a { text-decoration: none; color: var(--text-main); font-weight: 600; }
+
+        .hero {
+            padding: 5rem 0 6rem 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: var(--badge-text);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #22c55e;
+            box-shadow: 0 0 8px #22c55e;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-desc {
+            max-width: 650px;
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-primary, .btn-outline {
+            padding: 0.85rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover { background: var(--icon-bg); transform: translateY(-2px); }
+
+        section {
+            padding: 5rem 0;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title i { color: var(--primary); }
+        .section-desc { color: var(--text-muted); margin-bottom: 3rem; }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 1.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-icon-box {
+            height: 180px;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(99, 102, 241, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag-container { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+        .tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 9999px;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .card-links {
+            display: flex;
+            gap: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--card-border);
+        }
+        .card-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .card-links a.primary-link { color: var(--primary); }
+
+        .feature-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+        .feature-list li { display: flex; align-items: center; gap: 0.75rem; font-weight: 600; }
+        .feature-list i { color: var(--primary); }
+
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label { display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 0.75rem;
+            background: var(--input-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-control:focus { border-color: var(--primary); }
+
+        .success-msg {
+            display: none;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .success-msg.show { display: block; }
+
+        .social-links { display: flex; gap: 1rem; }
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 0.75rem;
+            background: var(--icon-bg);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.2s;
+        }
+        .social-icon:hover { color: var(--primary); transform: scale(1.1); }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--card-border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-btn { display: block; }
+            .hero-title { font-size: 2.5rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- جافا سكربت -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // تبديل الوضع الداكن/الفاتح
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlElement = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                themeIcon.className = "fa-solid fa-moon";
+                themeIcon.style.color = "#374151";
+            } else {
+                htmlElement.classList.add('dark');
+                themeIcon.className = "fa-solid fa-sun";
+                themeIcon.style.color = "#facc15";
+            }
+        });
+
+        // قائمة الموبايل
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.mob-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+        });
+
+        // محاكاة إرسال النموذج
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successMessage.classList.add('show');
+            contactForm.reset();
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
